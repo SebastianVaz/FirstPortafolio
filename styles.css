@@ -1,0 +1,164 @@
+* {
+    box-sizing: border-box;
+    margin: 5px;
+    /*margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    background: transparent;*/
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap');
+
+html {
+    font-size: 16px;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: medium;
+    color: #000000;
+}
+
+.container,
+.container-fluid,
+.container-lg,
+.container-md,
+.container-sm,
+.container-xl,
+.container-xxl {
+    width: 100%;
+    padding-right: var(--bs-gutter-x, 0);
+    padding-left: var(--bs-gutter-x, 0);
+    margin-right: auto;
+    margin-left: auto
+}
+
+@media (min-width:576px) {
+
+    .container,
+    .container-sm {
+        max-width: 540px
+    }
+}
+
+@media (min-width:768px) {
+
+    .container,
+    .container-md,
+    .container-sm {
+        max-width: 720px
+    }
+}
+
+@media (min-width:992px) {
+
+    .container,
+    .container-lg,
+    .container-md,
+    .container-sm {
+        max-width: 960px
+    }
+}
+
+@media (min-width:1200px) {
+
+    .container,
+    .container-lg,
+    .container-md,
+    .container-sm,
+    .container-xl {
+        max-width: 1140px
+    }
+}
+
+@media (min-width:1400px) {
+
+    .container,
+    .container-lg,
+    .container-md,
+    .container-sm,
+    .container-xl,
+    .container-xxl {
+        max-width: 1320px
+    }
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 1%;
+    align-items: center;
+}
+
+nav ul{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+nav li{
+    font-weight: 600;
+    list-style: none;
+}
+
+
+main{
+    min-height: calc(90vh - 20px);
+}
+
+.AboutMe{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 1%;
+}
+
+.Intro{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.Intro p{
+    line-height: 1.6;
+}
+
+.AboutMe img{
+    width: 300px;
+    height: 300px;
+}
+
+.Projects {
+    margin-top: 30px;
+    padding: 1%;
+}
+
+.Projects h2{
+    margin-bottom: 15px;
+}
+
+.Projects ul{
+    padding-left: 20px;
+}
+.Projects li{
+    padding: 5px;
+}
+
+.Skills{
+    margin-top: 30px;
+    padding: 1%;
+}
+
+.SkillsLogos{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.SkillsLogos img{
+    width: 32px;
+    height: 32px;
+}
+
+footer{
+    text-align: center;
+}
